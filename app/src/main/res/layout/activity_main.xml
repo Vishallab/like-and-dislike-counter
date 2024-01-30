@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.likesanddislikescount.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="73dp">
+
+    <TextView
+        android:id="@+id/likeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="66dp"
+        android:text="@string/o"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="38sp"
+        app:layout_constraintStart_toEndOf="@+id/dislikeText"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/dislikeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="160dp"
+        android:text="@string/_0"
+        android:textColor="@color/colorAccent"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/dislikeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/likeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="@color/like"
+        android:text="@string/like"
+        android:textSize="30dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dislikeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/dislikeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="106dp"
+        android:backgroundTint="@color/disike"
+        android:text="@string/dislike"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/resetButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dislikeText"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="124dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="235dp"
+        android:backgroundTint="@color/reset"
+        android:text="@string/reset"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dislikeButton"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <!--
+    <ImageView
+        android:id="@+id/likeView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars"/>
+
+    <ImageView
+        android:id="@+id/dislikeView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="121dp"
+        app:layout_constraintBottom_toTopOf="@+id/dislikeButton"
+        app:layout_constraintEnd_toStartOf="@+id/dislikeText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/dislike" />
+-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
